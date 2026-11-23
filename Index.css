@@ -1,0 +1,39 @@
+body {
+  background-color: #292730;
+  color: black;
+  margin: 0;
+}
+
+.navigatie {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #333333;
+}
+
+.navigatie li {
+  background-color: black;
+}
+
+.navigatie li a {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navigatie li {
+  background-color: #333333;
+}
+
+.navigatie li :hover {
+  background-color: lightslategray;
+  transition: background-color 2s;
+}
+
+.navigatie li.rechts {   
+  margin-left: auto;
+}
+
