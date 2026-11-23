@@ -1,0 +1,207 @@
+.giveaways {
+  color: #f2f0f7;
+  font-family: sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.giveaways h1 {
+  font-size: 40px;
+  /* Zonder eenheid, zelfde reden als hierboven */
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.giveaways h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.giveaways p {
+  margin: 0 0 12px;
+}
+
+/* Intro */
+.intro {
+  max-width: 600px;
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #45414f;
+}
+
+.intro p {
+  color: #b8b4c4;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Giveaway blokken */  
+.lijst {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.giveaway {
+  background-color: #333333;
+  border: 1px solid #45414f;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.giveaway:hover {
+  border-color: lightslategray;
+  transform: translateY(-4px);
+}
+
+.afbeelding {
+  height: 160px;
+  background-color: #3d3a47;
+  color: #8f8b9c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.inhoud {
+  padding: 20px;
+}
+
+.inhoud p:last-child {
+  color: #b8b4c4;
+  margin-bottom: 0;
+}
+
+.giveaway.afgelopen {
+  opacity: 0.6;
+}
+
+.giveaway.afgelopen:hover {
+  transform: none;
+  border-color: #45414f;
+}
+
+/* Status label */
+.status {
+  display: inline-block;
+  border: 1px solid #8f8b9c;
+  border-radius: 999px;
+  color: #b8b4c4;
+  font-size: 14px;
+  padding: 2px 12px;
+  margin-bottom: 12px;
+}
+
+.status.actief {
+  background-color: lightslategray;
+  border-color: lightslategray;
+  color: white;
+}
+
+/* Meedoen */
+.meedoen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.uitleg ol {
+  margin: 0;
+  padding-left: 20px;
+  color: #b8b4c4;
+}
+
+.uitleg li {
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.formulier {
+  background-color: #333333;
+  border: 1px solid #45414f;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.formulier h2 {
+  margin-bottom: 20px;
+}
+
+.formulier label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.formulier input[type="text"],
+.formulier input[type="email"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  background-color: #292730;
+  color: #f2f0f7;
+  border: 1px solid #55515f;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.formulier input[type="text"]:focus,
+.formulier input[type="email"]:focus {
+  outline: none;
+  border-color: lightslategray;
+  box-shadow: 0 0 0 3px snow;
+}
+
+.formulier .voorwaarden {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 400;
+  color: #b8b4c4;
+  margin-bottom: 20px;
+}
+
+.formulier .voorwaarden input {
+  margin-top: 6px;
+}
+
+.formulier button {
+  width: 100%;
+  background-color: lightslategray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulier button:hover {
+  background-color: #8a9bab;
+}
+
+.formulier button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+
+/* Mobiel */
+@media (max-width: 700px) {
+  .giveaways h1 {
+    font-size: 32px;
+  }
+
+  .meedoen {
+    grid-template-columns: 1fr;
+  }
+}
