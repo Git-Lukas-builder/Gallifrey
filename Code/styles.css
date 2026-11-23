@@ -37,3 +37,7 @@ body {
   margin-left: auto;
 }
 
+.navigatie li a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
