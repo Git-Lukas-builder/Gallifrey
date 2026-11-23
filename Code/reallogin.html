@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Galifrey</title>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
+</head>
+
+
+<body>
+    <ul class="navigatie">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overons.html">Over ons</a></li>
+        <li><a href="giveaways.html">Giveaways</a></li>
+        <li class="rechts"><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a></li>
+    </ul>
+
+    <form class="login" onsubmit="inloggen(event)">
+        <h1>Login</h1>
+
+        <p id="foutmelding" class="foutmelding"></p>
+
+        <label for="gebruikersnaam">Gebruikersnaam</label>
+        <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
+
+        <label for="wachtwoord">Wachtwoord</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required>
+
+        <button type="submit">Inloggen</button>
+    </form>
+
+</body>
+
+</html>
