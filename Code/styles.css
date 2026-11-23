@@ -102,3 +102,47 @@ body {
 .foutmelding:empty {
   display: none;
 }
+
+/* Hero op de homepagina */
+.hero {
+  padding: 4vh 20px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.hero .tagline {
+  margin: 8px 0 20px;
+  font-size: 18px;
+  color: lightslategray;
+}
+
+.hero-knop {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  background-color: lightslategray;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero-knop:hover {
+  background-color: #5f6b7a;
+}
+
+.hero-logo {
+  height: 40vh;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
